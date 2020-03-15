@@ -1,4 +1,4 @@
-<div class="layout-pane__container"><div class="coding-question__left-pane"><section><h1 class="question-view__title">3. Award Top K Hotels</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="a7dg7m4dak2-instruction">
+<div class="layout-pane__container"><div class="coding-question__left-pane"><section><h1 class="question-view__title"> Award Top K Hotels</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="a7dg7m4dak2-instruction">
 <div class="ps-content-wrapper-v0">
 <p>At Booking.com we want to recognize <var><code>k</code> </var>performing hotels. We plan to identify these by analyzing their user reviews and calculating a review score for each of the hotel.</p>
 

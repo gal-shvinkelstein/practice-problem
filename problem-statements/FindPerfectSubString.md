@@ -1,4 +1,4 @@
-<div class="coding-question__left-pane"><section><h1 class="question-view__title">2. Perfect Substring</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="7o8lell38fr-instruction">
+<div class="coding-question__left-pane"><section><h1 class="question-view__title"> Perfect Substring</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="7o8lell38fr-instruction">
 <p>A string&nbsp;<em>s</em>&nbsp;comprised of digits from&nbsp;<em>0</em>&nbsp;to&nbsp;<em>9</em> contains a perfect substring if all the elements within a substring occur exactly&nbsp;<em>k</em>&nbsp;times.&nbsp;Calculate the&nbsp;number of perfect substrings&nbsp;in <em>s</em>.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
