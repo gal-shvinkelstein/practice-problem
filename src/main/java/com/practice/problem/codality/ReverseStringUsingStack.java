@@ -1,10 +1,10 @@
 package com.practice.problem.codality;
 
-import dsa.stack.Stack;
+import dsa.stack.BasicStack;
 
 public class ReverseStringUsingStack {
     public String reverse(String input) {
-        Stack<Character> stack = new Stack(input.length());
+        BasicStack<Character> stack = new BasicStack(input.length());
         for (char item : input.toCharArray()) {
             stack.push(item);
         }
