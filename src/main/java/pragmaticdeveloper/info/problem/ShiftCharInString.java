@@ -1,4 +1,4 @@
-package com.practice.problem.hackerearth;
+package pragmaticdeveloper.info.problem;
 
 public class ShiftCharInString {
     public static void main(String[] args) {

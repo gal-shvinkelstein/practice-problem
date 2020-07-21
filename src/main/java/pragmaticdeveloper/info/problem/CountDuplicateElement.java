@@ -1,4 +1,4 @@
-package com.practice.problem.codality;
+package pragmaticdeveloper.info.problem;
 
 import java.util.List;
 import java.util.function.Function;

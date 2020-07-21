@@ -1,4 +1,4 @@
-package com.practice.java.generics;
+package pragmaticdeveloper.info.java.generics;
 
 import java.util.List;
 

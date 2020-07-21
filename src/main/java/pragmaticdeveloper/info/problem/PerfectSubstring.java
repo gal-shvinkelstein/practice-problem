@@ -1,4 +1,4 @@
-package com.practice.problem.codality;
+package pragmaticdeveloper.info.problem;
 
 public class PerfectSubstring {
     public static int perfectSubstring(String s, int k) {

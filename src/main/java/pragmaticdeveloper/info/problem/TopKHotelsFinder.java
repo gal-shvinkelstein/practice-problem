@@ -1,4 +1,4 @@
-package com.practice.problem.codality;
+package pragmaticdeveloper.info.problem;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -9,7 +9,7 @@ public class TopKHotelsFinder {
                                                 List<Integer> hotelIds,
                                                 List<String> reviews, int k) {
         List<String> positiveReviewsToken = Arrays.asList(positiveKeywords.split(" "));
-        List<String> nagativeReviewsToken = Arrays.asList(negativeKeywords.split(" "));
+        List<String> negativeReviewsToken = Arrays.asList(negativeKeywords.split(" "));
         Map<Integer, Integer> positiveReview = new HashMap<>();
         for (int i = 0; i < reviews.size(); i++) {
             int hotelId = hotelIds.get(i);
@@ -20,7 +20,7 @@ public class TopKHotelsFinder {
                     .count();
 
             int currentNegative = (int) review.stream()
-                    .filter(token -> nagativeReviewsToken.contains(token))
+                    .filter(token -> negativeReviewsToken.contains(token))
                     .count();
 
             int total = currentPositive * 3 + currentNegative * -1;
@@ -35,7 +35,6 @@ public class TopKHotelsFinder {
                 .limit(k)
                 .map(Map.Entry::getKey)
                 .collect(Collectors.toList());
-        System.out.println(topHotel);
         return topHotel;
     }
 }

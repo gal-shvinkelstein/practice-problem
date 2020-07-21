@@ -39,10 +39,7 @@ public class SinglyLinkedList<E> implements List<E> {
 
     @Override
     public void addFirst(E e) {
-        Node node = new Node<>(e, null);
-        head.setNext(node);
-        head = node;
-
+        head = new Node<>(e, head);
         if (size == 0) {
             tail = head;
         }
@@ -51,11 +48,12 @@ public class SinglyLinkedList<E> implements List<E> {
 
     @Override
     public void addLast(E e) {
-        Node node = new Node<>(e, tail);
-        tail = node;
+        Node node = new Node<>(e, null);
         if (size == 0) {
-            head = tail;
+            head = node;
         }
+        tail = node;
+        tail.setNext(node);
         size++;
     }
 
@@ -71,5 +69,25 @@ public class SinglyLinkedList<E> implements List<E> {
             tail = null;
         }
         return e;
+    }
+
+    @Override
+    public String toString() {
+        if (size == 0) {
+            return null;
+        }
+
+        Node node = tail;
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        sb.append(node.getValue());
+
+        while (node != null && node.hasNext()) {
+            sb.append(",");
+            sb.append(node.getValue());
+            node = node.getNext();
+        }
+        sb.append("]");
+        return sb.toString();
     }
 }

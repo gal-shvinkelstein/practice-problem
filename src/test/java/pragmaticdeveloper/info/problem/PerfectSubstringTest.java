@@ -1,9 +1,10 @@
-package com.practice.problem.codality;
+package pragmaticdeveloper.info.problem;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import pragmaticdeveloper.info.problem.PerfectSubstring;
 
 import java.util.stream.Stream;
 

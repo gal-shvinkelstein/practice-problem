@@ -1,4 +1,4 @@
-package com.practice.problem.hackerearth;
+package pragmaticdeveloper.info.problem;
 
 import java.util.Arrays;
 

@@ -17,11 +17,15 @@ public class Node<E> {
         this.value = value;
     }
 
-    public Node getNext() {
+    public Node<E> getNext() {
         return next;
     }
 
     public void setNext(Node next) {
         this.next = next;
+    }
+
+    public boolean hasNext() {
+        return this.next != null;
     }
 }
