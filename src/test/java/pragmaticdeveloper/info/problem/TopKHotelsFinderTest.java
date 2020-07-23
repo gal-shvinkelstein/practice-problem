@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
-class AwardTopKHotelsTest {
+class TopKHotelsFinderTest {
     private TopKHotelsFinder awardTopKHotels;
 
     @BeforeEach
@@ -33,7 +33,7 @@ class AwardTopKHotelsTest {
     private static Stream<Arguments> topKHotelsProvider() {
         return Stream.of(
                 Arguments.of(
-                        "breakfast beach citycenter location metro view staff price",
+                        "breakfast beach city center location metro view staff price",
                         "not",
                         getHotelIds(),
                         getReviews(),
@@ -61,11 +61,11 @@ class AwardTopKHotelsTest {
 
     private static List<String> getReviews() {
         List<String> reviews = new ArrayList<>();
-        reviews.add("This hotel has a nice view of the citycenter. The location is perfect.");
-        reviews.add("The breakfast is ok. Regarding location, it is quite far from citycenter but price is cheap so it is worth.");
-        reviews.add("Location is excellent, 5 minutes from citycenter. There is also a metro station very close to the hotel");
+        reviews.add("This hotel has a nice view of the city center. The location is perfect.");
+        reviews.add("The breakfast is ok. Regarding location, it is quite far from city center but price is cheap so it is worth.");
+        reviews.add("Location is excellent, 5 minutes from city center. There is also a metro station very close to the hotel");
         reviews.add("They said I couldn't take my dog and there were other guests with dogs! That is not fair.");
-        reviews.add("Very friendly staff and good cost-benefit ratio. Its location is a bit far from citycenter");
+        reviews.add("Very friendly staff and good cost-benefit ratio. Its location is a bit far from city center");
         return reviews;
     }
 }

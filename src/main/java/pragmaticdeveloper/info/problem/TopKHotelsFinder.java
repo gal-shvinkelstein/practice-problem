@@ -5,9 +5,9 @@ import java.util.stream.Collectors;
 
 public class TopKHotelsFinder {
 
-    public static List<Integer> awardTopKHotels(String positiveKeywords, String negativeKeywords,
-                                                List<Integer> hotelIds,
-                                                List<String> reviews, int k) {
+    public List<Integer> awardTopKHotels(String positiveKeywords, String negativeKeywords,
+                                         List<Integer> hotelIds,
+                                         List<String> reviews, int k) {
         List<String> positiveReviewsToken = Arrays.asList(positiveKeywords.split(" "));
         List<String> negativeReviewsToken = Arrays.asList(negativeKeywords.split(" "));
         Map<Integer, Integer> positiveReview = new HashMap<>();
